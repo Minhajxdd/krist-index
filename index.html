@@ -114,71 +114,69 @@
 
 
     <!-- section one-->
-     <section class="w-full mt-25 px-40">
+    <section class="w-full px-6 lg:px-40 mt-25">
 
-        <div class="w-full">
-            <h1 class="text-3xl font-mono">My Profile</h1>
+  <div class="w-full mb-6">
+    <h1 class="text-3xl font-mono font-semibold">My Profile</h1>
+  </div>
+
+  <div class="grid lg:grid-cols-4 gap-8">
+
+    <!-- Profile section -->
+    <div class="h-110 border border-gray-200 rounded-md shadow-sm">
+
+      <div class="flex items-center gap-4 border-b border-gray-200 p-4">
+        <img class="w-16 h-16 rounded-full object-cover" src="./assets/images/profile.jpeg" alt="profile image">
+        <div>
+          <p class="text-gray-600">Hello 👋</p>
+          <p class="font-bold text-lg">Robert Fox</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col">
+        <div class="p-4 flex items-center gap-3 hover:bg-gray-100 cursor-pointer">
+          <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 00-4-4H9a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          Personal Information
         </div>
 
-        <div class="mt-5 grid lg:grid-cols-4">
-            
-            <div class="border border-gray-300">
-                
-                <div class="p-3 flex w-full gap-5 border-b border-gray-300">
-                    <img class="h-15 rounded-full" src="./assets/images/profile.jpeg" alt="profile image">
-                    <div class="flex align-center justify-center flex-col">
-                        <span>
-                            Hello 👋
-                        </span>
-                        <span class="font-bold text-xl">
-                            Robert Fox
-                        </span>
-                    </div>
-                </div>
-
-                <div class="p-4 flex w-full gap-5 bg-white hover:bg-gray-100 cursor-pointer">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-icon lucide-user"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-                  Personal Information
-                </div>
-
-                <div class="p-4 flex w-full gap-5 bg-white hover:bg-gray-100 cursor-pointer">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package-icon lucide-package"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/></svg>
-                  My Orders
-                </div>
-
-                <div class="bg-black p-4 flex w-full gap-5 text-white ">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-icon lucide-heart"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
-                  My Wishlists
-                </div>
-
-                <div class="p-4 flex w-full gap-5 bg-white hover:bg-gray-100 cursor-pointer">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-credit-card-icon lucide-credit-card"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
-                  Saved Cards
-                </div>
-
-                <div class="p-4 flex w-full gap-5 bg-white hover:bg-gray-100 cursor-pointer">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bell-icon lucide-bell"><path d="M10.268 21a2 2 0 0 0 3.464 0"/><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"/></svg>
-                  Notifications
-                </div>
-
-                <div class="p-4 flex w-full gap-5 bg-white hover:bg-gray-100 cursor-pointer">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings-icon lucide-settings"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
-                  Settings
-                </div>
-
-            </div>
-
-            
-            <div>two</div>
-            <div>three</div>
-            <div>four</div>
-            <div>five</div>
-            <div>six/div>
-
-
+        <div class="p-4 flex items-center gap-3 hover:bg-gray-100 cursor-pointer">
+          <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M11 21.73a2 2 0 002 0l7-4A2 2 0 0021 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73z"/><path d="M12 22V12"/><path d="M3.29 7L12 12l8.71-5"/><path d="m7.5 4.27 9 5.15"/></svg>
+          My Orders
         </div>
 
-     </section>
+        <div class="p-4 flex items-center gap-3 bg-black text-white cursor-pointer">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0016.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 002 8.5c0 2.3 1.5 4.05 3 5.5l7 7z"/></svg>
+          My Wishlists
+        </div>
+
+        <div class="p-4 flex items-center gap-3 hover:bg-gray-100 cursor-pointer">
+          <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+          Saved Cards
+        </div>
+
+        <div class="p-4 flex items-center gap-3 hover:bg-gray-100 cursor-pointer">
+          <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M10.268 21a2 2 0 003.464 0"/><path d="M3.262 15.326A1 1 0 004 17h16a1 1 0 00.74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 006 8c0 4.499-1.411 5.956-2.738 7.326"/></svg>
+          Notifications
+        </div>
+
+        <div class="p-4 flex items-center gap-3 hover:bg-gray-100 cursor-pointer">
+          <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12.22 2h-.44a2 2 0 00-2 2v.18a2 2 0 01-1 1.73l-.43.25a2 2 0 01-2 0l-.15-.08a2 2 0 00-2.73.73l-.22.38a2 2 0 00.73 2.73l.15.1a2 2 0 011 1.72v.51a2 2 0 01-1 1.74l-.15.09a2 2 0 00-.73 2.73l.22.38a2 2 0 002.73.73l.15-.08a2 2 0 012 0l.43.25a2 2 0 011 1.73V20a2 2 0 002 2h.44a2 2 0 002-2v-.18a2 2 0 011-1.73l.43-.25a2 2 0 012 0l.15.08a2 2 0 002.73-.73l.22-.39a2 2 0 00-.73-2.73l-.15-.08a2 2 0 01-1-1.74v-.5a2 2 0 011-1.74l.15-.09a2 2 0 00.73-2.73l-.22-.38a2 2 0 00-2.73-.73l-.15.08a2 2 0 01-2 0l-.43-.25a2 2 0 01-1-1.73V4a2 2 0 00-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+          Settings
+        </div>
+      </div>
+    </div>
+
+    <!-- Products main card -->
+    <div id="products-render-container" class="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+      <!-- products will be dynamically rendered here -->
+      
+    </div>
+
+    
+  </div>
+</section>
+
 
 
 
@@ -189,5 +187,8 @@
     <!-- <div style="width: 100%; height: 10000px; background-color: black;" class="z-19">fdsfdsff</div> -->
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <script src="./scripts/index.js"></script>
+
   </body>
 </html>
